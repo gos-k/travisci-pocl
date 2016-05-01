@@ -22,6 +22,11 @@ install:
   - wget http://portablecl.org/downloads/pocl-0.12.tar.gz
   - tar xzf pocl-0.12.tar.gz && cd pocl-0.12/ && ./configure && make && sudo make install
 
+cache:
+  directories:
+    - $HOME/.roswell
+    - $HOME/pocl-0.12
+
 script:
   - pwd
   - clinfo
