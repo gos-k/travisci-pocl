@@ -21,4 +21,7 @@ install:
   - sudo apt-get install -y clinfo pkg-config libltdl3-dev libhwloc-dev llvm-dev clang libclang-dev ocl-icd-opencl-dev libedit-dev
   - wget http://portablecl.org/downloads/pocl-0.12.tar.gz
   - tar xzf pocl-0.12.tar.gz && cd pocl-0.12/ && ./configure && make && sudo make install
+
+script:
+  - pwd
   - clinfo
