@@ -17,4 +17,6 @@ cache:
 
 script:
   - pwd
+  - cd
+  - pwd
   - clinfo
