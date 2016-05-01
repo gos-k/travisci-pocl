@@ -12,6 +12,7 @@ install:
   - pwd
   - pushd .
   - pwd
+  - cd $HOME
   - wget http://portablecl.org/downloads/pocl-0.12.tar.gz
   - tar xzf pocl-0.12.tar.gz && cd pocl-0.12/ && ./configure && make && sudo make install
   - popd
