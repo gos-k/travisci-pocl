@@ -7,7 +7,7 @@ env:
     - CXX=clang++
 
 install:
-  - sudo apt-get install -y pkg-config libltdl3-dev libhwloc-dev llvm-dev clang libclang-dev ocl-icd-opencl-dev libedit-dev
+  - sudo apt-get install -y clinfo pkg-config libltdl3-dev libhwloc-dev llvm-dev clang libclang-dev ocl-icd-opencl-dev libedit-dev
 
   - pwd
   - pushd .
@@ -26,3 +26,4 @@ script:
   - pwd
   - cd
   - pwd
+  - clinfo
